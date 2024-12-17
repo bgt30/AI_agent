@@ -114,6 +114,7 @@ def search_youtube_videos_with_comments(query, max_results=5, max_comments=3):
     videos = sorted(videos, key=lambda x: x["similarity"], reverse=True)
     return videos
 
+
 # Streamlit UI 설정
 st.title("AI YouTube Video Recommendation")  # 앱 제목
 
@@ -187,7 +188,6 @@ if user_input := st.chat_input("질문을 입력하세요! 종료하려면 '종�
 
 
 '''
-사용자 질문 정제하는 거 추가
+사용자 질문 정제하는 거 보완
 이전 내용 기억하는 거 추가
-
 '''

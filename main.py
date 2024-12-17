@@ -185,9 +185,3 @@ if user_input := st.chat_input("질문을 입력하세요! 종료하려면 '종�
             except Exception as e:
                 # RAG 호출 중 오류 발생 시 처리
                 st.error(f"RAG 호출 중 오류가 발생했습니다: {str(e)}")
-
-
-'''
-사용자 질문 정제하는 거 보완
-이전 내용 기억하는 거 추가
-'''

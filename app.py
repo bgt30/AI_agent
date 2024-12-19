@@ -1,5 +1,5 @@
 # Streamlit UI 설정
-st.title("AI YouTube Video Recommendation")  # 앱 제목
+st.title("유튜브 영상 추천 AI🤖")  # 앱 제목
 
 # 채팅 기록을 위한 세션 상태 초기화
 if "messages" not in st.session_state:
@@ -35,7 +35,7 @@ if user_input := st.chat_input("질문을 입력하세요! 종료하려면 '종�
                     # 유튜브 검색 실행
                     videos = search_youtube_videos_with_comments(user_input)
                     if videos:
-                        st.subheader("🔍 관련 유튜브 동영상 추천:")
+                        st.subheader("관련 유튜브 영상 추천:")
                         assistant_response = ""
                         for video in videos:
                             # 유튜브 동영상 삽입 (링크를 통해 바로 실행)
